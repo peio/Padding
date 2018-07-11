@@ -224,10 +224,10 @@ def TestPadding(str, blocksize=AES_blocksize):
     str = appendPadding(str)
     str = removePadding(str)
     if sha1(str).hexdigest() == str_hash:
-        print 'ok'
+        print ('ok')
         return True
     else:
-        print 'Failed for str:',str
+        print ('Failed for str:',str)
         return False
 
 'Padding modes'
